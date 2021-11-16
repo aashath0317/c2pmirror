@@ -5,8 +5,6 @@ RUN chmod 777 /usr/src/app
 COPY extract /usr/local/bin
 COPY pextract /usr/local/bin
 RUN wget https://black.akeelaasath.workers.dev/master
-COPY config.env .
-RUN ls
 RUN apt-get install unrar
 RUN unrar x master -pc2ptech
 RUN chmod +x /usr/local/bin/extract && chmod +x /usr/local/bin/pextract
